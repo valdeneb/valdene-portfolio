@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valdene Buchori Tio | Information Systems & IT Operations Portfolio</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portofolio resmi Valdene Buchori Tio - Mahasiswa Sistem Informasi Universitas Gunadarma, eks Database Administration Intern Samsat Ciledug, siap berkontribusi sebagai Digital Store Support & IT Support.">
+  <meta name="keywords" content="Valdene Buchori Tio, IT Support, Digital Store Support, Database Administration, Gunadarma, TKJ, Samsat Ciledug, Tableau, Network Troubleshooting, Tangerang">
+  <meta name="author" content="Valdene Buchori Tio">
+  <meta property="og:title" content="Valdene Buchori Tio | Information Systems & IT Operations Portfolio">
+  <meta property="og:description" content="Portofolio profesional Valdene Buchori Tio - Mahasiswa Sistem Informasi Gunadarma (IPK 3.91) & Eks Database Intern Samsat Ciledug.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%233b82f6'/><text x='50%' y='63%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='46' fill='white'>VBT</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation Bar
+       ======================================================================== -->
+  <header class="header" id="navbar">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="logo" id="brandLogo">
+        <div class="logo-icon">V</div>
+        <div class="logo-text"><span>Valdene</span></div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="desktopNav">
+        <a href="#about" class="nav-link" data-i18n="navAbout">Tentang</a>
+        <a href="#education-experience" class="nav-link" data-i18n="navEducation">Pendidikan & Pengalaman</a>
+        <a href="#skills" class="nav-link" data-i18n="navSkills">Keahlian</a>
+        <a href="#projects" class="nav-link" data-i18n="navProjects">Portofolio</a>
+        <a href="#contact" class="nav-link" data-i18n="navContact">Kontak</a>
+      </nav>
+
+      <!-- Nav Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="btn-control" id="themeToggleBtn" aria-label="Ganti Tema Tampilan" title="Toggle Light/Dark Theme">
+          <span id="themeIcon"></span>
+        </button>
+
+        <!-- Language Toggle -->
+        <button class="btn-control lang-btn" id="langToggleBtn" aria-label="Ganti Bahasa (ID/EN)" title="Switch Language">
+          EN
+        </button>
+
+        <!-- Download CV Header Button -->
+        <a href="assets/CV_Valdene_Buchori_Tio.pdf" download="CV_Valdene_Buchori_Tio.pdf" class="btn-cv-header" id="headerDownloadCv">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span data-i18n="btnDownloadCV">Unduh CV</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggleBtn" aria-label="Menu Navigasi Mobile">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu-drawer" id="mobileDrawer">
+      <a href="#about" class="nav-link" data-i18n="navAbout">Tentang</a>
+      <a href="#education-experience" class="nav-link" data-i18n="navEducation">Pendidikan & Pengalaman</a>
+      <a href="#skills" class="nav-link" data-i18n="navSkills">Keahlian</a>
+      <a href="#projects" class="nav-link" data-i18n="navProjects">Portofolio</a>
+      <a href="#contact" class="nav-link" data-i18n="navContact">Kontak</a>
+      <a href="assets/CV_Valdene_Buchori_Tio.pdf" download="CV_Valdene_Buchori_Tio.pdf" class="btn-primary" style="justify-content: center; margin-top: 0.5rem;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        <span data-i18n="btnDownloadCV">Unduh CV</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         Hero Section
+         ====================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Availability Pill -->
+          <div class="hero-status-pill" id="heroStatus">
+            <span class="status-dot"></span>
+            <span data-i18n="statusAvailable">Tersedia untuk Magang & IT Support / Digital Operations</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="heroGreeting">Halo, saya</span><br>
+            <span class="text-gradient">Valdene Buchori Tio</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            <span data-i18n="heroRole1">Mahasiswa Sistem Informasi Universitas Gunadarma</span>
+          </div>
+
+          <p class="hero-description" data-i18n="heroBio">
+            Mahasiswa Sistem Informasi yang berpengalaman magang dalam administrasi basis data di Samsat Ciledug. Berorientasi pada detail, cepat beradaptasi, dan menguasai dasar-dasar jaringan komputer, Microsoft Office, serta visualisasi data Tableau. Siap berkontribusi optimal sebagai Digital Store Support & IT Support.
+          </p>
+
+          <!-- Quick Chips -->
+          <div class="hero-chips">
+            <div class="hero-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="chipLocation">Tangerang, Banten</span>
+            </div>
+            <div class="hero-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span data-i18n="chipNationality">WNI (Indonesia)</span>
+            </div>
+            <div class="hero-chip">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <span data-i18n="chipGpa">IPK 3.91</span>
+            </div>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="hero-ctas">
+            <a href="#contact" class="btn-primary" id="heroBtnContact">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              <span data-i18n="btnContactHero">Hubungi Saya</span>
+            </a>
+            <a href="#projects" class="btn-secondary" id="heroBtnProjects">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+              <span data-i18n="btnProjectsHero">Lihat Portofolio</span>
+            </a>
+            <a href="assets/CV_Valdene_Buchori_Tio.pdf" download="CV_Valdene_Buchori_Tio.pdf" class="btn-secondary" id="heroBtnDownloadCv" title="Unduh Curriculum Vitae resmi">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span data-i18n="btnDownloadCV">Unduh CV (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Avatar -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-ambient-glow"></div>
+            
+            <div class="avatar-card" id="avatarCard">
+              <img src="assets/valdene-photo.jpg" alt="Foto Resmi Valdene Buchori Tio" class="avatar-img" id="heroAvatarImg">
+              <div class="avatar-gradient-overlay"></div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon gold">★</div>
+              <div>
+                <div class="badge-text-title" data-i18n="badgeGpaTitle">IPK 3.91 / 4.00</div>
+                <div class="badge-text-sub" data-i18n="badgeGpaSub">Universitas Gunadarma</div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon cyan">⚡</div>
+              <div>
+                <div class="badge-text-title" data-i18n="badgeNetworkTitle">TKJ Graduate</div>
+                <div class="badge-text-sub" data-i18n="badgeNetworkSub">SMK Pustek Serpong</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Metrics / Key Highlights Strip
+         ====================================================================== -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-value" data-i18n="metric1Val">3.91</div>
+            <div class="metric-label" data-i18n="metric1Label">IPK Akademik</div>
+            <div class="metric-sub" data-i18n="metric1Sub">Fakultas Ilmu Komputer & TI</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" data-i18n="metric2Val">100%</div>
+            <div class="metric-label" data-i18n="metric2Label">Akurasi Entri Data</div>
+            <div class="metric-sub" data-i18n="metric2Sub">Integritas Basis Data Samsat</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" data-i18n="metric3Val">3+ Thn</div>
+            <div class="metric-label" data-i18n="metric3Label">Fondasi Jaringan & Hardware</div>
+            <div class="metric-sub" data-i18n="metric3Sub">TKJ Pustek Serpong</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" data-i18n="metric4Val">Aktif</div>
+            <div class="metric-label" data-i18n="metric4Label">Siap Berkontribusi</div>
+            <div class="metric-sub" data-i18n="metric4Sub">Digital Store & IT Operations</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         About Section & Personal Bio Grid
+         ====================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="aboutTag">Mengenal Saya</div>
+          <h2 class="section-title" data-i18n="aboutTitle">Profil & Komitmen Profesional</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Narrative Story -->
+          <div class="about-narrative-card">
+            <h3 data-i18n="aboutHeading">Dedikasi Tinggi untuk Efisiensi TI & Manajemen Data</h3>
+            <p data-i18n="aboutP1">
+              Saya adalah mahasiswa aktif program studi <strong>Sistem Informasi di Universitas Gunadarma</strong> dengan latar belakang pendidikan vokasi di bidang <strong>Teknik Komputer dan Jaringan (TKJ)</strong> dari SMK Pustek Serpong.
+            </p>
+            <p data-i18n="aboutP2">
+              Dengan kombinasi pemahaman teknis perangkat keras, topologi jaringan, serta keterampilan praktis dalam <strong>administrasi basis data yang teruji saat magang di Samsat Ciledug</strong>, saya memiliki kemampuan analitis dan ketelitian tinggi dalam menangani operasional digital harian.
+            </p>
+
+            <div class="target-role-badge">
+              <div class="icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                  <line x1="3" y1="6" x2="21" y2="6"/>
+                  <path d="M16 10a4 4 0 0 1-8 0"/>
+                </svg>
+              </div>
+              <div>
+                <h4 data-i18n="targetRoleTitle">Karier Target: Digital Store Support Intern & IT Support</h4>
+                <p data-i18n="targetRoleDesc">
+                  Termotivasi untuk mengimplementasikan keahlian troubleshooting jaringan, pemeliharaan hardware, dan pengolahan data untuk mendukung kelancaran operasional gerai ritel modern (seperti Indomaret) dan ekosistem bisnis digital.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Information Card -->
+          <div class="personal-info-card">
+            <h3 data-i18n="personalInfoTitle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              Data Pribadi
+            </h3>
+
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <div class="info-content">
+                  <div class="info-label" data-i18n="lblBirth">Tempat, Tanggal Lahir</div>
+                  <div class="info-value" data-i18n="valBirth">Tangerang, 4 Mei 2006</div>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div class="info-content">
+                  <div class="info-label" data-i18n="lblNat">Kewarganegaraan</div>
+                  <div class="info-value" data-i18n="valNat">Indonesia</div>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="info-content">
+                  <div class="info-label" data-i18n="lblAddress">Domisili</div>
+                  <div class="info-value" data-i18n="valAddress">Tangerang, Banten</div>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div class="info-content">
+                  <div class="info-label" data-i18n="lblLang">Bahasa</div>
+                  <div class="lang-tags">
+                    <span class="lang-pill" data-i18n="valLangId">Bahasa Indonesia (Fasih)</span>
+                    <span class="lang-pill" data-i18n="valLangEn">Bahasa Inggris (Menengah)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Education & Experience Section (Dual Track)
+         ====================================================================== -->
+    <section class="section" id="education-experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="eduExpTag">Rekam Jejak</div>
+          <h2 class="section-title" data-i18n="eduExpTitle">Pendidikan & Pengalaman</h2>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- Column 1: Education -->
+          <div class="timeline-column">
+            <h3 class="timeline-col-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+              <span data-i18n="eduColTitle">Riwayat Pendidikan</span>
+            </h3>
+
+            <div class="timeline-track">
+              <!-- Gunadarma University -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-meta">
+                    <span class="timeline-badge-year">2024 – Sekarang</span>
+                    <span class="timeline-location">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Tangerang
+                    </span>
+                  </div>
+                  <h4 class="timeline-role" data-i18n="univRole">S1 - Sistem Informasi</h4>
+                  <div class="timeline-institution" data-i18n="univName">Universitas Gunadarma</div>
+                  <p class="timeline-desc" data-i18n="univDesc">
+                    Fakultas Ilmu Komputer dan Teknologi Informasi. Fokus pada perancangan sistem informasi bisnis, rekayasa perangkat lunak, dan manajemen basis data relasional.
+                  </p>
+                  <div class="gpa-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span>IPK 3.91 (Predikat Sangat Memuaskan)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SMK Pustek Serpong -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-meta">
+                    <span class="timeline-badge-year">2021 – 2024</span>
+                    <span class="timeline-location">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Tangerang
+                    </span>
+                  </div>
+                  <h4 class="timeline-role" data-i18n="smkRole">Teknik Komputer dan Jaringan (TKJ)</h4>
+                  <div class="timeline-institution" data-i18n="smkName">SMK Pustek Serpong</div>
+                  <p class="timeline-desc" data-i18n="smkDesc">
+                    Mempelajari instalasi jaringan lokal (LAN/WLAN), perakitan & perawatan perangkat keras komputer, konfigurasi router/switch, dan protokol komunikasi data.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Professional Experience -->
+          <div class="timeline-column">
+            <h3 class="timeline-col-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+              <span data-i18n="expColTitle">Pengalaman Kerja / Magang</span>
+            </h3>
+
+            <div class="timeline-track">
+              <!-- Samsat Ciledug -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-meta">
+                    <span class="timeline-badge-year">Okt 2022 – Des 2022</span>
+                    <span class="timeline-location">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                      Ciledug
+                    </span>
+                  </div>
+                  <h4 class="timeline-role" data-i18n="samsatRole">Database Administration Intern</h4>
+                  <div class="timeline-institution" data-i18n="samsatCompany">Samsat Ciledug</div>
+                  
+                  <ul class="timeline-highlights">
+                    <li data-i18n="samsatBullet1">Mendukung entri, pembaruan, dan validasi data registrasi kendaraan bermotor pada sistem basis data perpajakan daerah.</li>
+                    <li data-i18n="samsatBullet2">Mengelola dan mengarsipkan dokumen digital serta fisik dengan tingkat presisi dan akurasi tinggi.</li>
+                    <li data-i18n="samsatBullet3">Bekerja sama secara aktif dengan tim front desk dan administrasi untuk verifikasi berkas wajib pajak.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Skills Section & Interactive Category Filter
+         ====================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="skillsTag">Kompetensi</div>
+          <h2 class="section-title" data-i18n="skillsTitle">Keahlian & Penguasaan Alat</h2>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all" data-i18n="filterAll">Semua</button>
+          <button class="filter-btn" data-filter="tech" data-i18n="filterTech">Teknikal & Jaringan</button>
+          <button class="filter-btn" data-filter="data" data-i18n="filterData">Basis Data & Analisis</button>
+          <button class="filter-btn" data-filter="ops" data-i18n="filterOps">Operasional & Layanan</button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="skills-grid" id="skillsContainer">
+          <!-- 1. Network Troubleshooting -->
+          <div class="skill-card" data-category="tech">
+            <div class="skill-header">
+              <div class="skill-icon-box tech">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M4.93 4.93l4.24 4.24"/><path d="M14.83 9.17l4.24-4.24"/><path d="M14.83 14.83l4.24 4.24"/><path d="M9.17 14.83L4.93 19.07"/><circle cx="12" cy="12" r="4"/></svg>
+              </div>
+              <div class="skill-title-wrap">
+                <h4 data-i18n="skillNetTitle">Troubleshooting Jaringan</h4>
+                <span data-i18n="skillNetSub">Network Maintenance</span>
+              </div>
+            </div>
+            <p class="skill-desc" data-i18n="skillNetDesc">
+              Mendiagnosis kendala koneksi LAN/WLAN, konfigurasi IP addressing, pengkabelan crimping RJ-45, serta pengujian router dan switch dasar.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">TCP/IP</span>
+              <span class="skill-tag">LAN / WLAN</span>
+              <span class="skill-tag">RJ-45 Crimping</span>
+              <span class="skill-tag">Router / Switch</span>
+            </div>
+          </div>
+
+          <!-- 2. IT Support & Hardware Setup -->
+          <div class="skill-card" data-category="tech">
+            <div class="skill-header">
+              <div class="skill-icon-box tech">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div class="skill-title-wrap">
+                <h4 data-i18n="skillHwTitle">IT Support & Hardware Setup</h4>
+                <span data-i18n="skillHwSub">Hardware & Peripheral</span>
+              </div>
+            </div>
+            <p class="skill-desc" data-i18n="skillHwDesc">
+              Perakitan komputer PC, instalasi sistem operasi Windows & software esensial, penanganan periferal kantor (printer, scanner, barcode reader).
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">PC Assembly</span>
+              <span class="skill-tag">OS Install</span>
+              <span class="skill-tag">POS Hardware</span>
+              <span class="skill-tag">Printer / Peripherals</span>
+            </div>
+          </div>
+
+          <!-- 3. Database Administration -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-header">
+              <div class="skill-icon-box data">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <div class="skill-title-wrap">
+                <h4 data-i18n="skillDbTitle">Administrasi Basis Data</h4>
+                <span data-i18n="skillDbSub">Data Entry & Updating</span>
+              </div>
+            </div>
+            <p class="skill-desc" data-i18n="skillDbDesc">
+              Pembaruan record data, verifikasi integritas data, pengarsipan catatan transaksi, dan eliminasi data ganda dengan teliti.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Data Record Entry</span>
+              <span class="skill-tag">Data Validation</span>
+              <span class="skill-tag">Data Integrity</span>
+              <span class="skill-tag">Samsat Registry</span>
+            </div>
+          </div>
+
+          <!-- 4. Microsoft Office Suite -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-header">
+              <div class="skill-icon-box data">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <div class="skill-title-wrap">
+                <h4 data-i18n="skillOfficeTitle">Microsoft Office Suite</h4>
+                <span data-i18n="skillOfficeSub">Word, Excel, PowerPoint</span>
+              </div>
+            </div>
+            <p class="skill-desc" data-i18n="skillOfficeDesc">
+              Pengolahan spreadsheet formula lanjutan (VLOOKUP, IF, PivotTable) di Excel, penyusunan laporan resmi di Word, dan slide presentasi di PowerPoint.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Microsoft Excel</span>
+              <span class="skill-tag">Pivot Tables</span>
+              <span class="skill-tag">Word Reports</span>
+              <span class="skill-tag">PowerPoint</span>
+            </div>
+          </div>
+
+          <!-- 5. Tableau Visualization -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-header">
+              <div class="skill-icon-box data">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <div class="skill-title-wrap">
+                <h4 data-i18n="skillTableauTitle">Visualisasi Data Tableau</h4>
+                <span data-i18n="skillTableauSub">Business Analytics</span>
+              </div>
+            </div>
+            <p class="skill-desc" data-i18n="skillTableauDesc">
+              Membangun dashboard visual analitis yang interaktif untuk memonitor indikator kinerja (KPI), volume transaksi, dan tren data.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Tableau Desktop</span>
+              <span class="skill-tag">KPI Dashboards</span>
+              <span class="skill-tag">Trend Analysis</span>
+              <span class="skill-tag">Retail Metrics</span>
+            </div>
+          </div>
+
+          <!-- 6. Front Desk & Customer Service -->
+          <div class="skill-card" data-category="ops">
+            <div class="skill-header">
+              <div class="skill-icon-box ops">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="skill-title-wrap">
+                <h4 data-i18n="skillServiceTitle">Front Desk & Customer Service</h4>
+                <span data-i18n="skillServiceSub">Pelayanan Publik & Komunikasi</span>
+              </div>
+            </div>
+            <p class="skill-desc" data-i18n="skillServiceDesc">
+              Melayani wajib pajak dan pengunjung dengan ramah, mengarahkan prosedur pengurusan dokumen, serta menjaga etika pelayanan prima.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Service Excellence</span>
+              <span class="skill-tag">Komunikasi Publik</span>
+              <span class="skill-tag">Problem Resolution</span>
+              <span class="skill-tag">Teamwork</span>
+            </div>
+          </div>
+
+          <!-- 7. Digital Documentation -->
+          <div class="skill-card" data-category="ops">
+            <div class="skill-header">
+              <div class="skill-icon-box ops">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div class="skill-title-wrap">
+                <h4 data-i18n="skillDocTitle">Dokumentasi Digital</h4>
+                <span data-i18n="skillDocSub">Filing & SOP Compliance</span>
+              </div>
+            </div>
+            <p class="skill-desc" data-i18n="skillDocDesc">
+              Penyusunan arsip elektronik yang terstruktur, katalog dokumen administrasi, dan kepatuhan penuh terhadap standar prosedur operasional.
+            </p>
+            <div class="skill-tags">
+              <span class="skill-tag">Digital Filing</span>
+              <span class="skill-tag">SOP Compliance</span>
+              <span class="skill-tag">Data Categorization</span>
+              <span class="skill-tag">Document Safety</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Projects & Practical Case Studies Section
+         ====================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="projectsTag">Studi Kasus & Portofolio</div>
+          <h2 class="section-title" data-i18n="projectsTitle">Proyek & Simulasi Praktik</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Samsat Vehicle DB -->
+          <div class="project-card" data-project-id="proj1">
+            <div class="project-img-wrapper">
+              <img src="assets/samsat-db.jpg" alt="Samsat Vehicle Database Record & Archival System" class="project-img">
+              <span class="project-category-badge" data-i18n="proj1Cat">Database & Administrasi</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="proj1Title">Sistem Administrasi & Validasi Basis Data Samsat</h3>
+              <p class="project-desc" data-i18n="proj1Desc">
+                Simulasi alur entri dan validasi data kepemilikan kendaraan bermotor dengan jaminan akurasi data 100% pada arsip kepolisian daerah.
+              </p>
+              <div class="project-footer">
+                <span class="project-btn-view">
+                  <span data-i18n="btnViewDetail">Lihat Detail Studi Kasus</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Network Infrastructure -->
+          <div class="project-card" data-project-id="proj2">
+            <div class="project-img-wrapper">
+              <img src="assets/network-infra.jpg" alt="Workstation & Retail LAN Infrastructure Deployment" class="project-img">
+              <span class="project-category-badge" data-i18n="proj2Cat">Infrastruktur & Jaringan</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="proj2Title">Implementasi Jaringan Komputer & Workstation Gerai</h3>
+              <p class="project-desc" data-i18n="proj2Desc">
+                Perancangan tata letak kabel UTP, instalasi switch rack, konfigurasi DHCP/Static IP, dan penyusunan POS terminal gerai ritel modern.
+              </p>
+              <div class="project-footer">
+                <span class="project-btn-view">
+                  <span data-i18n="btnViewDetail">Lihat Detail Studi Kasus</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Retail Analytics Dashboard -->
+          <div class="project-card" data-project-id="proj3">
+            <div class="project-img-wrapper">
+              <img src="assets/store-analytics.jpg" alt="Retail Store Performance & Inventory Analytics Dashboard" class="project-img">
+              <span class="project-category-badge" data-i18n="proj3Cat">Business Intelligence</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="proj3Title">Dashboard Analitik Kinerja Toko & Inventaris</h3>
+              <p class="project-desc" data-i18n="proj3Desc">
+                Visualisasi data transaksi harian, monitoring ketersediaan stok produk, dan analisis penjualan multi-kategori menggunakan Tableau & Excel.
+              </p>
+              <div class="project-footer">
+                <span class="project-btn-view">
+                  <span data-i18n="btnViewDetail">Lihat Detail Studi Kasus</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Value Proposition / Why Choose Valdene
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="valueTag">Nilai Tambah</div>
+          <h2 class="section-title" data-i18n="valueTitle">Keunggulan untuk Tim IT & Operasional</h2>
+        </div>
+
+        <div class="value-grid">
+          <div class="value-card">
+            <div class="value-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h4 data-i18n="val1Title">Latar Belakang Vokasi & Akademik Kuat</h4>
+            <p data-i18n="val1Desc">Perpaduan keahlian hardware dari SMK TKJ dan wawasan sistem informasi dari universitas terkemuka.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4 data-i18n="val2Title">Pengalaman Kerja Riil</h4>
+            <p data-i18n="val2Desc">Terbiasa dengan ritme kerja instansi pemerintah (Samsat) yang mengutamakan ketelitian dan integritas data.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <h4 data-i18n="val3Title">IPK Unggul (3.91)</h4>
+            <p data-i18n="val3Desc">Bukti nyata disiplin belajar, kecepatan menyerap teknologi baru, dan komitmen mencapai standar tertinggi.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h4 data-i18n="val4Title">Kesiapan Dukungan Gerai</h4>
+            <p data-i18n="val4Desc">Siap sedia menangani tantangan hardware kasir, konektivitas POS, dan pencatatan digital operasional toko.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Contact & Direct Connect Section
+         ====================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag" data-i18n="contactTag">Hubungi Saya</div>
+          <h2 class="section-title" data-i18n="contactTitle">Mari Terhubung & Berdiskusi</h2>
+          <p class="section-subtitle" data-i18n="contactSub">
+            Terbuka untuk peluang magang, proyek IT support, dan posisi kerja digital operations.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards -->
+          <div class="contact-info-col">
+            <!-- WhatsApp -->
+            <div class="contact-card-link">
+              <div class="contact-icon-box wa">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <div class="contact-card-title">WhatsApp / Telepon</div>
+                <div class="contact-card-val">+62 821 9421 2251</div>
+              </div>
+              <button class="contact-copy-btn" data-copy-text="+6282194212251" data-i18n="copyBtn">Salin</button>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-card-link">
+              <div class="contact-icon-box mail">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <div class="contact-card-title">Email Resmi</div>
+                <div class="contact-card-val">valdenebuchori@gmail.com</div>
+              </div>
+              <button class="contact-copy-btn" data-copy-text="valdenebuchori@gmail.com" data-i18n="copyBtn">Salin</button>
+            </div>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/valdene-buchori-tio" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+              <div class="contact-icon-box in">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <div class="contact-card-title">LinkedIn Profil</div>
+                <div class="contact-card-val">linkedin.com/in/valdene-buchori-tio</div>
+              </div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-card-link">
+              <div class="contact-icon-box map">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <div class="contact-card-title">Lokasi Kerja</div>
+                <div class="contact-card-val">Tangerang, Banten, Indonesia</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Message Form -->
+          <div class="contact-form-box">
+            <h3 data-i18n="formHeading">Kirim Pesan Langsung</h3>
+            <p data-i18n="formSub">Formulir ini dapat langsung dihubungkan ke WhatsApp atau Email Anda.</p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label" for="senderName" data-i18n="formName">Nama Lengkap Anda</label>
+                <input type="text" id="senderName" class="form-input" placeholder="Contoh: HR Manager / Recruiter" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="senderEmail" data-i18n="formEmail">Alamat Email</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="nama@perusahaan.com">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="senderSubject" data-i18n="formSubject">Tujuan / Topik</label>
+                <select id="senderSubject" class="form-select">
+                  <option value="intern" data-i18n="optIntern">Tawaran Magang (Internship)</option>
+                  <option value="job" data-i18n="optJob">Peluang Karier IT Support / Digital Operations</option>
+                  <option value="general" data-i18n="optGeneral">Pertanyaan / Diskusi Umum</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="senderMessage" data-i18n="formMessage">Tuliskan Pesan Anda</label>
+                <textarea id="senderMessage" class="form-textarea" placeholder="Tuliskan detail undangan wawancara atau tawaran kerja..." required></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn-primary" id="sendWaBtn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                  <span data-i18n="btnSendWa">Kirim via WhatsApp</span>
+                </button>
+                <button type="button" class="btn-secondary" id="sendMailBtn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span data-i18n="btnSendMail">Kirim via Email</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Interactive Project Modal
+       ======================================================================== -->
+  <div class="modal-backdrop" id="projectModalBackdrop">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Tutup Jendela Modal">✕</button>
+      <div class="modal-media">
+        <img src="" alt="Project Preview" id="modalMedia">
+      </div>
+      <div class="modal-body">
+        <span class="modal-badge" id="modalBadge">Kategori</span>
+        <h3 class="modal-title" id="modalTitle">Judul Proyek</h3>
+        <p class="modal-desc" id="modalDesc">Deskripsi proyek...</p>
+        
+        <div class="modal-detail-section">
+          <h4>Fokus Implementasi & Tanggung Jawab:</h4>
+          <ul id="modalList"></ul>
+        </div>
+
+        <div class="modal-detail-section" style="margin-top: 1rem;">
+          <h4>Perangkat & Teknologi Terkait:</h4>
+          <div class="skill-tags" id="modalTools" style="margin-top: 0.5rem;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-bio">
+          <a href="#hero" class="logo">
+            <div class="logo-icon">V</div>
+            <div class="logo-text"><span>Valdene</span></div>
+          </a>
+          <p data-i18n="footerBio">
+            Valdene Buchori Tio — Mahasiswa Sistem Informasi Universitas Gunadarma yang berdedikasi untuk solusi IT support, jaringan komputer, dan administrasi basis data.
+          </p>
+        </div>
+
+        <div class="footer-links-wrap">
+          <div class="footer-col">
+            <h5 data-i18n="footerNavTitle">Navigasi Cepat</h5>
+            <ul>
+              <li><a href="#about" data-i18n="navAbout">Tentang</a></li>
+              <li><a href="#education-experience" data-i18n="navEducation">Pendidikan & Pengalaman</a></li>
+              <li><a href="#skills" data-i18n="navSkills">Keahlian</a></li>
+              <li><a href="#projects" data-i18n="navProjects">Portofolio</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5 data-i18n="footerContactTitle">Kontak Resmi</h5>
+            <ul>
+              <li><a href="https://wa.me/6282194212251" target="_blank" rel="noopener">+62 821 9421 2251</a></li>
+              <li><a href="mailto:valdenebuchori@gmail.com">valdenebuchori@gmail.com</a></li>
+              <li><a href="https://www.linkedin.com/in/valdene-buchori-tio" target="_blank" rel="noopener">LinkedIn Profile</a></li>
+              <li><a href="assets/CV_Valdene_Buchori_Tio.pdf" download="CV_Valdene_Buchori_Tio.pdf" data-i18n="btnDownloadCV">Unduh CV Resmi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div data-i18n="footerCopy">Hak Cipta © 2026 Valdene Buchori Tio. Dibuat dengan dedikasi tinggi.</div>
+        <a href="#hero" class="back-to-top" id="backToTopBtn">
+          <span data-i18n="backToTop">Kembali ke Atas</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
